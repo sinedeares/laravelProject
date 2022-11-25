@@ -17,7 +17,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{route('index')}}">Интернет Магазин</a>
+            <a class="navbar-brand" href="{{route('index')}}">DigitTech World</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -30,11 +30,11 @@
 
             <ul class="nav navbar-nav navbar-right">
                 @guest
-                    <li><a href="{{ route('login') }}">Панель администратора</a></li>
+                    <li><a href="{{ route('login') }}">Панель продавца</a></li>
                 @endguest
 
                 @auth
-                    <li><a href="{{ route('home') }}">Панель администратора</a></li>
+                    <li><a href="{{ route('home') }}">Панель продавца</a></li>
                     <li><a href="{{ route('get-logout') }}">Выйти</a></li>
                 @endauth
             </ul>
